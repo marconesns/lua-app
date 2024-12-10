@@ -13,7 +13,7 @@ Este projeto demonstra o conceito de *blue/green deployments* utilizando o Kuber
 
 ### Clone o repositório
 ```bash
-git clone [https://seu-repositorio.git lua-app](https://github.com/marconesns/lua-app.git)
+git clone https://github.com/marconesns/lua-app.git
 ```
 
 ### Navegue para o diretório do projeto
