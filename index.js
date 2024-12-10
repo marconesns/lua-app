@@ -1,37 +1,17 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
 const port = 3000;
 
-// Rota padrão para a página inicial
+// Serve arquivos estáticos a partir da pasta 'public'
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Rota padrão
 app.get('/', (req, res) => {
-  // Renderiza uma página HTML simples com o fundo e a imagem
-  res.send(`
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>Lua App</title>
-      <style>
-        body {
-          background-color: blue; /* Inicialmente, fundo azul */
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-        }
-        img {
-          width: 200px;
-        }
-      </style>
-    </head>
-    <body>
-      <img src="lua.png" alt="Lua">
-    </body>
-    </html>
-  `);
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Inicia o servidor
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
 });
