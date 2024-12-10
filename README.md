@@ -1,18 +1,13 @@
-```markdown
 # Lua App: Demonstração de Blue/Green Deployments no Kubernetes
 
 ## Descrição
 Este projeto demonstra o conceito de *blue/green deployments* utilizando o Kubernetes. A aplicação é simples: uma página web com um fundo colorido e uma imagem da lua. O objetivo é mostrar como atualizar a aplicação sem interromper o serviço, alternando entre duas versões.
-
----
 
 ## Pré-requisitos
 - **Node.js e npm (ou yarn):** Instale a última versão do [Node.js](https://nodejs.org) e npm (ou yarn) no seu sistema.
 - **Docker:** Instale o Docker Desktop ou siga as instruções para a sua plataforma no [site oficial do Docker](https://docs.docker.com/engine/install/).
 - **kubectl:** Instale o [kubectl](https://kubernetes.io/docs/tasks/tools/), a ferramenta de linha de comando para interagir com o Kubernetes.
 - **Cluster Kubernetes:** Pode ser um cluster local (como [minikube](https://minikube.sigs.k8s.io/docs/)) ou em nuvem (como [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine), [Amazon EKS](https://aws.amazon.com/eks/) ou [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/)).
-
----
 
 ## Instalação
 
